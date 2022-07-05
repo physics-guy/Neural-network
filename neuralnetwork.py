@@ -7,7 +7,7 @@ class Layer_Dense:
     '''Dense layer object'''
     def __init__(self, n_inputs, n_neurons):
         '''Initialize each weight using a Gaussian distribution with mean 0
-        and standard deviation 1 over the square root of the number of
+        and standard deviation 1/sqrt(N_inputs) over the square root of the number of
         weights connecting to the same neuron.  Initialize the biases
         using a Gaussian distribution with mean 0 and standard
         deviation 1.'''
